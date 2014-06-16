@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	 
+<h:body>
+
+	<ui:composition template="./template.xhtml">
+	<ui:define name="box">
+    	 <table id="containertext" >
+  			<tr>
+    			<td><h:form>
+    			 <a href="productpage.jsf"> <img src="images.jpg" align="left" alt="Red dress"/> </a>
+    			<br/>
+    			<h3 align="center" border="1"> Blue Dress </h3> <br/>
+    			<h3 align="center"> 28.00 SGD </h3>  <br/>
+    			<h:commandButton image="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"
+                     			 action="#{shoppingBean.makeFirstCall}" />  
+    			</h:form></td>
+    			
+    			<td>
+    			<h:form>
+    			<a href="productpage.jsf"> <img src="images1.jpg"  align="left" alt="Red dress"/></a>
+    			<br/>
+    			<h3 align="center"> Pink Dress </h3> <br/>
+    			<h3 align="center"> 28.00 SGD </h3>  <br/>
+    			<h:commandButton image="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"
+                     			 action="#{shoppingBean.makeFirstCall}" />  
+    			</h:form> </td>	
+    			
+    			<td>
+    			<h:form>
+    			<a href="productpage.jsf"> <img src="images2.jpg"  align="left" alt="Red dress"/></a>
+    			<br/>
+    			<h3 align="center"> Floral Dress </h3> <br/>
+    			<h3 align="center"> 28.00 SGD </h3> <br/>
+    			<h:commandButton image="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"
+                     			 action="#{shoppingBean.makeFirstCall}" />    			
+    			
+    			</h:form>
+    			</td>	
+  			</tr> 
+  		
+  			
+  		</table>  
+     </ui:define> 
+ 
+ 
+ 
+ 
+	
+	 </ui:composition>	
+</h:body>
+</html>
